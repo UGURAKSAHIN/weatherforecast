@@ -47,4 +47,5 @@ This project is a simple web application that displays weather forecasts using a
 
      - If you would like to develop this project, please feel free to open a pull request. Any contributions are welcome!
     
-  
+  ![WeatherForecast](https://github.com/user-attachments/assets/27d2d7fc-6bf8-400b-a31a-c744637dadd9)
+
