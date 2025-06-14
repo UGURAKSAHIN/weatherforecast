@@ -1,6 +1,6 @@
 # Weather Forecast App(React & ASP.NET CORE)
 This project is a simple web application that displays weather forecasts using a React frontend and ASP.NET Core backend. It pulls current weather data and presents it in the form of cards with a user-friendly interface.
-
+# Screen Shot
 ![WeatherForecast](https://github.com/user-attachments/assets/16ff493a-de1d-4671-889a-7457d8cd0dca)
 
 # Features
