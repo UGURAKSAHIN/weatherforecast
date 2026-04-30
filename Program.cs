@@ -1,32 +1,34 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 var app = builder.Build();
 
 app.UseDefaultFiles();
 app.MapStaticAssets();
 
-// Configure the HTTP request pipeline.
-
 app.UseHttpsRedirection();
 
 var summaries = new[]
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+    "Freezing", "Bracing", "Chilly", "Cool", "Mild",
+    "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
 
 app.MapGet("/weatherforecast", () =>
 {
-    var forecast = Enumerable.Range(1, 10).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
+    var forecasts = Enumerable.Range(1, 10)
+        .Select(index =>
+        {
+            var temperatureC = Random.Shared.Next(-20, 55);
+
+            return new WeatherForecast(
+                DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+                temperatureC,
+                summaries[Random.Shared.Next(summaries.Length)]
+            );
+        })
         .ToArray();
-    return forecast;
+
+    return Results.Ok(forecasts);
 });
 
 app.MapFallbackToFile("/index.html");
