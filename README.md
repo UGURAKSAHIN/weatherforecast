@@ -1,52 +1,146 @@
-# Weather Forecast App(React & ASP.NET CORE)
-This project is a simple web application that displays weather forecasts using a React frontend and ASP.NET Core backend. It pulls current weather data and presents it in the form of cards with a user-friendly interface.
-# Preview
+# 🌦️ Weather Forecast App (React + ASP.NET Core)
+
+## 📌 Overview
+
+This is a full-stack web application that displays weather forecasts using a **React frontend** and an **ASP.NET Core Web API backend**.
+
+The application fetches real-time weather data from the backend and presents it through a clean, responsive, and user-friendly interface.
+
+---
+
+## 🖼️ Preview
+
 ![WeatherForecast](https://github.com/user-attachments/assets/16ff493a-de1d-4671-889a-7457d8cd0dca)
 
-# Features
+---
 
-- Current Weather Data: Pulls weather forecasts from ASP.NET Core API
-- Visual Card Presentation: Each weather forecast is displayed in a separate stylish card
-- Weather Icons: Instead of textual weather summaries, visual icons are used
-- Responsive Design: Cards are automatically arranged according to screen size
-- Loading and Error Display: Loading status is displayed while data is being pulled, and an error message is displayed when an error occurs
+## ✨ Features
 
-# Technology Stack
+* 🌡️ Fetches weather data from ASP.NET Core API
+* 🧩 Card-based UI for clear data visualization
+* 🌤️ Weather icons instead of plain text summaries
+* 📱 Fully responsive design
+* ⏳ Loading state handling
+* ❌ Error handling for failed API requests
 
-# Fronted:
+---
 
-- React: JavaScript library for creating user interfaces
-- CSS: Used to define the style of the application
+## 🛠️ Tech Stack
 
-  # Backend:
+### 🔹 Frontend
 
-  - ASP.NET Core: API that provides weather data
- 
-  # Installation And Operation
+* React (Hooks)
+* CSS
 
-  # Prerequisites:
+### 🔹 Backend
 
-  - Node.js and npm (or Yarn): Required to run a React application
-  - .NET SDK: Required to run the ASP.NET Core backend
- 
-  1. Clone The Project:
-     
-     - git clone [https://github.com/UGURAKSAHIN/weatherforecast]
-     - cd [weatherforecast]
-  
-  2. Start Backend (ASP.NET Core):
-     
-     - dotnet run
-     - This will launch the backend API. It usually runs at https://localhost:5001 or http://localhost:5000
-       
-  3. Start Frontend (React):
-     - cd ClientApp 
-     - npm install 
-     - npm start
-     - This command will start the React development server and automatically open the application in your browser at http://localhost:3000
-    
-     # Contribute
+* ASP.NET Core Web API
+* RESTful architecture
 
-     - If you would like to develop this project, please feel free to open a pull request. Any contributions are welcome!
-  
+---
 
+## 📂 Project Structure
+
+```bash id="prj123"
+weatherforecast/
+├── ClientApp/        # React frontend
+├── Controllers/      # API controllers
+├── Models/           # Data models
+├── Program.cs
+├── appsettings.json
+└── README.md
+```
+
+---
+
+## ⚙️ Setup & Installation
+
+### 1. Prerequisites
+
+Make sure you have:
+
+* Node.js (v16+ recommended)
+* npm or yarn
+* .NET SDK (6 or later)
+
+---
+
+### 2. Clone the Repository
+
+```bash id="cln123"
+git clone https://github.com/UGURAKSAHIN/weatherforecast.git
+cd weatherforecast
+```
+
+---
+
+### 3. Run Backend (ASP.NET Core)
+
+```bash id="bck123"
+dotnet run
+```
+
+Backend will run at:
+
+* https://localhost:5001
+* http://localhost:5000
+
+---
+
+### 4. Run Frontend (React)
+
+```bash id="frt123"
+cd ClientApp
+npm install
+npm start
+```
+
+Frontend will run at:
+
+* http://localhost:3000
+
+---
+
+## 🔗 API Communication
+
+The React frontend communicates with the ASP.NET Core backend via REST API endpoints.
+
+Example:
+
+```bash id="api123"
+GET /weatherforecast
+```
+
+---
+
+## 🚀 Improvements (Planned)
+
+* 🔐 Environment-based API configuration
+* 🌍 Integration with real weather API (OpenWeatherMap, etc.)
+* 📊 Advanced UI (charts, graphs)
+* 🧪 Unit & integration tests
+* ☁️ Deployment (Docker / Azure / Vercel)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+Feel free to open issues or submit pull requests.
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+## 👤 Author
+
+**Uğur Akşahin**
+
+* 🔗 GitHub: https://github.com/UGURAKSAHIN
+* 🔗 LinkedIn: https://www.linkedin.com/in/uguraksahin
+
+---
